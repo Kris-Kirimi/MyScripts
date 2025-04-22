@@ -2,14 +2,14 @@
 ; BIND data file for local loopback interface
 ;
 $TTL	604800
-@	IN	SOA	arc.cns. root.arc.cns. (
+@	IN	SOA	kris.cns. root.kris.cns. (
 			 2024092403	; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
-@	IN	NS	arc.cns.
+@	IN	NS	kris.cns.
 @	IN	A	10.0.2.136
 @	IN	MX	10	mail
 

@@ -27,8 +27,8 @@ zone "255.in-addr.arpa" {
 	file "/etc/bind/db.255";
 };
 
-zone "arc.cns" {
+zone "kris.cns" {
 	type master;
-	file "/etc/bind/db.arc.cns";
+	file "/etc/bind/db.kris.cns";
 };
 

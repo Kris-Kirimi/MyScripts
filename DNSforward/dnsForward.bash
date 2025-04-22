@@ -14,16 +14,16 @@ cp /home/kris/DNSforward/templates/etc/bind/named.conf.options /etc/bind/named.c
 cp /home/kris/DNSforward/templates/etc/bind/named.conf.default-zones /etc/bind/named.conf.default-zones
 
 # 4. Create the zone file
-#cp /etc/bind/db.local /etc/bind/db.arc.cns
-#nano /etc/bind/db.arc.cns
-cp /home/kris/DNSforward/templates/etc/bind/db.arc.cns /etc/bind/db.arc.cns
+#cp /etc/bind/db.local /etc/bind/db.kris.cns
+#nano /etc/bind/db.kris.cns
+cp /home/kris/DNSforward/templates/etc/bind/db.kris.cns /etc/bind/db.kris.cns
 # 4.1 Set permissions for the zone file
-chown bind:bind /etc/bind/db.arc.cns
-chmod 640 /etc/bind/db.arc.cns
+chown bind:bind /etc/bind/db.kris.cns
+chmod 640 /etc/bind/db.kris.cns
 
 # 5. Verify Setup
 named-checkconf
-named-checkzone arc.cns /etc/bind/db.arc.cns
+named-checkzone kris.cns /etc/bind/db.kris.cns
 
 # 6. Reload Bind9 service
 systemctl reload bind9
