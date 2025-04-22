@@ -20,11 +20,11 @@ mail	IN	A	10.0.2.11
 internetworking.2.srv   IN      A       10.0.2.201
 internetworking.3.srv   IN      A       10.0.2.202
 
-; Round Robin A Records for www
-; www     IN      A       10.0.2.211
-; www     IN      A       10.0.2.212
-www	IN	A	10.0.2.210
-; www   IN      A       10.0.2.13
+#; Round Robin A Records for www
+#; www     IN      A       10.0.2.211
+#; www     IN      A       10.0.2.212
+#www	IN	A	10.0.2.210
+#; www   IN      A       10.0.2.13
 
 ; mail   IN      A       10.0.2.239
 mail	IN	A	10.0.2.136
