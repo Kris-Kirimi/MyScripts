@@ -3,55 +3,27 @@
 ;
 $TTL	604800
 @	IN	SOA	kris.cns. root.kris.cns. (
-			 2024092403	; Serial
+			      2		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
 @	IN	NS	kris.cns.
-@	IN	A	10.0.2.136
+@	IN	A	192.168.100.136
 @	IN	MX	10	mail
 
-internetworking.1.srv	IN	A	10.0.2.200
-www	IN	CNAME	internetworking.1.srv
-mail	IN	A	10.0.2.11
+www	IN	A	192.168.100.210
 
-internetworking.2.srv   IN      A       10.0.2.201
-internetworking.3.srv   IN      A       10.0.2.202
+mail	IN	A	192.168.100.136
 
-#; Round Robin A Records for www
-#; www     IN      A       10.0.2.211
-#; www     IN      A       10.0.2.212
-#www	IN	A	10.0.2.210
-#; www   IN      A       10.0.2.13
+stu	IN	A	192.168.100.136
+gav	IN	A	192.168.100.136
 
-; mail   IN      A       10.0.2.239
-mail	IN	A	10.0.2.136
-; mail   IN      A       10.20.113.37
-; mail 	IN	A	10.4.181.23
+iac	IN	A	192.168.100.200
 
-nfs	IN	A	10.0.2.141
-smb	IN	A	10.0.2.141
+sql	IN	A	192.168.100.230
 
-ldap	IN	A	10.0.2.137
-ldapslv	IN	A	10.0.2.138
+nesdev	IN	A	192.168.100.135
 
-dns	IN	A	10.0.2.220
-dnsslv	IN	A	10.0.2.221
-
-stu	IN	A	10.0.2.136
-gav	IN	A	10.0.2.136
-
-iac	IN	A	10.0.2.200
-
-sql	IN	A	10.0.2.230
-sqlslv1	IN	A	10.0.2.231
-sqlslv2	IN	A	10.0.2.232
-
-nesdev	IN	A	10.0.2.135
-; nesdev   IN      A       10.20.113.44
-
-; soc	IN	A	10.0.2.143
 soc 	IN	A	10.20.113.43
-; soc	IN	A	10.4.181.24
